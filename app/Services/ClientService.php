@@ -171,7 +171,7 @@ class ClientService{
                 $mailReceipient = $client->email;
                 Mail::to($mailReceipient)->send(new ProfileUploadReminder($name));
             }
-            $message = $totalUserWithoutProfileImage . " were reminded";
+            $message = $totalUserWithoutProfileImage . " Clients were reminded";
         }
 
         return $message;
